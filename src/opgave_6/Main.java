@@ -32,6 +32,12 @@ public class Main extends Application {
                 pane.add(new ImageView(new Image(image)), j, i);
                 tileNum++;
 
+                if (tileNum == 10){
+                    tileNum++;
+                }else if (tileNum > 20 ){
+                    tileNum = 0;
+                }
+
             }
 
         }
